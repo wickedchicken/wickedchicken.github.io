@@ -1,0 +1,1 @@
+Deployed from https://github.com/wickedchicken/stip-blog.
