@@ -394,28 +394,28 @@ in an &ldquo;<code>*args</code>&rdquo; array and a &ldquo;<code>**kwargs</code>&
 order<sup class="footnote-ref" id="fnref:kwarg-ordering"><a href="#fn:kwarg-ordering">9</a></sup>, but the price is that you have to refer to them by
 keyword:</p>
 
-<pre><code class="language-python">def ball_thrower_pos(subject, direct_object, indirect_object):
+<pre><code class="language-python">def ball_giver_pos(subject, direct_object, indirect_object):
     &quot;&quot;&quot;This uses English-style positional ordering.&quot;&quot;&quot;
-    print(f'The {subject} throws the {direct_object} to the {indirect_object}.')
+    print(f'The {subject} gives the {direct_object} to the {indirect_object}.')
 
 
-def ball_thrower_kwargs(**kwargs):
+def ball_giver_kwargs(**kwargs):
     &quot;&quot;&quot;This uses Germanish free-form keyword ordering.&quot;&quot;&quot;
     subject = kwargs['subject']
     direct_object = kwargs['direct_object']
     indirect_object = kwargs['indirect_object']
-    print(f'The {subject} throws the {direct_object} to the {indirect_object}.')
+    print(f'The {subject} gives the {direct_object} to the {indirect_object}.')
 
 
 # These print the same thing
-ball_thrower_pos('man', 'ball', 'dog')
-ball_thrower_kwargs(subject='man', direct_object='ball', indirect_object='dog')
-ball_thrower_kwargs(direct_object='ball', indirect_object='dog', subject='man')
-ball_thrower_kwargs(indirect_object='dog', subject='man', direct_object='ball')
-ball_thrower_kwargs(subject='man', indirect_object='dog', direct_object='ball')
+ball_giver_pos('man', 'ball', 'dog')
+ball_giver_kwargs(subject='man', direct_object='ball', indirect_object='dog')
+ball_giver_kwargs(direct_object='ball', indirect_object='dog', subject='man')
+ball_giver_kwargs(indirect_object='dog', subject='man', direct_object='ball')
+ball_giver_kwargs(subject='man', indirect_object='dog', direct_object='ball')
 
 # This does *not* print the same thing
-ball_thrower_pos('ball', 'man', 'dog')
+ball_giver_pos('ball', 'man', 'dog')
 </code></pre>
 
 <p>Note how the positional one loses functionality but requires less typing. You
