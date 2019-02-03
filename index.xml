@@ -7,9 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright (c) 2018, all rights reserved. Theme based on &lt;a href=&#34;https://github.com/gyorb/hugo-dusk&#34;&gt;hugo-dusk&lt;/a&gt;.</copyright>
+    <lastBuildDate>Sun, 03 Feb 2019 21:37:26 +0100</lastBuildDate>
     
 	<atom:link href="https://wickedchicken.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>German for Programmers</title>
+      <link>https://wickedchicken.github.io/post/german-for-programmers/</link>
+      <pubDate>Sun, 03 Feb 2019 21:37:26 +0100</pubDate>
+      
+      <guid>https://wickedchicken.github.io/post/german-for-programmers/</guid>
+      <description>After 2 years of learning German I&amp;rsquo;ve noticed that, for the most part, you can go a long way by mapping foreign concepts to ones that you already know. In particular, I&amp;rsquo;ve had success mapping aspects of German grammar to programming concepts I use every day. After all, programmers deal with weird grammars all the time, why not take advantage of that skill?
+Gendered nouns: forward error correction Probably the first difficulty people run into when leaning German is memorizing the gender of each noun and properly declining that noun&amp;rsquo;s articles when used in a sentence.</description>
+    </item>
     
   </channel>
 </rss>

@@ -7,18 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright (c) 2018, all rights reserved. Theme based on &lt;a href=&#34;https://github.com/gyorb/hugo-dusk&#34;&gt;hugo-dusk&lt;/a&gt;.</copyright>
-    <lastBuildDate>Tue, 25 Sep 2018 13:23:44 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 03 Feb 2019 21:37:26 +0100</lastBuildDate>
     
 	<atom:link href="https://wickedchicken.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>On Pizza</title>
-      <link>https://wickedchicken.github.io/post/stip-content/</link>
-      <pubDate>Tue, 25 Sep 2018 13:23:44 +0200</pubDate>
+      <title>German for Programmers</title>
+      <link>https://wickedchicken.github.io/post/german-for-programmers/</link>
+      <pubDate>Sun, 03 Feb 2019 21:37:26 +0100</pubDate>
       
-      <guid>https://wickedchicken.github.io/post/stip-content/</guid>
-      <description>Today I learned that my calorie-tracking app thinks that I eat fewer calories on days I eat pizza than on days I don&amp;rsquo;t. Unfortunately I think this is a due to a lack of data (it&amp;rsquo;s only basing this off of about 11 days of tracking). Even if it were true, correlation isn&amp;rsquo;t causation. Still, I won&amp;rsquo;t turn down an excuse to eat more pizza.</description>
+      <guid>https://wickedchicken.github.io/post/german-for-programmers/</guid>
+      <description>After 2 years of learning German I&amp;rsquo;ve noticed that, for the most part, you can go a long way by mapping foreign concepts to ones that you already know. In particular, I&amp;rsquo;ve had success mapping aspects of German grammar to programming concepts I use every day. After all, programmers deal with weird grammars all the time, why not take advantage of that skill?
+Gendered nouns: forward error correction Probably the first difficulty people run into when leaning German is memorizing the gender of each noun and properly declining that noun&amp;rsquo;s articles when used in a sentence.</description>
     </item>
     
   </channel>

@@ -3,12 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://wickedchicken.github.io/post/german-for-programmers/</loc>
+    <lastmod>2019-02-03T21:37:26+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://wickedchicken.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://wickedchicken.github.io/</loc>
+    <lastmod>2019-02-03T21:37:26+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wickedchicken.github.io/post/</loc>
+    <lastmod>2019-02-03T21:37:26+01:00</lastmod>
     <priority>0</priority>
   </url>
   
