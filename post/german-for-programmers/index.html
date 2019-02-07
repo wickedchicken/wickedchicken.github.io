@@ -285,7 +285,7 @@ the scopes are introduced.</p>
 parse. Generously contributed by <a href="http://www.unhyperbolic.org/">Matthias Görner</a>, the sentence
 &ldquo;Ich stimme dem
 Maler, der die Meinung, dass Rot keine Farbe ist, vertritt, zu&rdquo; layers a
-<em>trennvares Verb</em> (<em>zustimmen</em>), a relative clause (<em>der &hellip; vertritt</em>), and a
+<em>trennbares Verb</em> (<em>zustimmen</em>), a relative clause (<em>der &hellip; vertritt</em>), and a
 dependent clause (<em>dass &hellip; ist</em>) to demonstrate the LIFO ordering. The
 translation is &ldquo;I agree with the painter, who represents the opinion that red is
 not a color.&rdquo;</p>
@@ -336,7 +336,7 @@ prepositions. Take <em>bei</em>: according to <a href="https://de.pons.com/%C3%B
 situation <em>bei</em> can function like the English prepositions with, for, in, to,
 near, by, among, and during. Talk about multi-purpose!
 <a href="https://de.pons.com/%C3%BCbersetzung?q=auf&amp;l=deen&amp;in=&amp;lf=en"><em>auf</em></a> has the same problem, and it doesn&rsquo;t help that <em>auf</em> is one
-of the preopsitions that <a href="http://www.canoo.net/services/OnlineGrammar/Wort/Praeposition/Kasus/2Kasus.html?lang=en">change meaning</a> depending on which case
+of the prepositions that <a href="http://www.canoo.net/services/OnlineGrammar/Wort/Praeposition/Kasus/2Kasus.html?lang=en">change meaning</a> depending on which case
 it&rsquo;s used with.</p>
 
 <p>This became infuriating as I would memorize the translation given by the
@@ -394,12 +394,12 @@ in an &ldquo;<code>*args</code>&rdquo; array and a &ldquo;<code>**kwargs</code>&
 order<sup class="footnote-ref" id="fnref:kwarg-ordering"><a href="#fn:kwarg-ordering">9</a></sup>, but the price is that you have to refer to them by
 keyword:</p>
 
-<pre><code class="language-python">def ball_giver_pos(subject, direct_object, indirect_object):
+<pre><code class="language-python">def giver_pos(subject, direct_object, indirect_object):
     &quot;&quot;&quot;This uses English-style positional ordering.&quot;&quot;&quot;
     print(f'The {subject} gives the {direct_object} to the {indirect_object}.')
 
 
-def ball_giver_kwargs(**kwargs):
+def giver_kwargs(**kwargs):
     &quot;&quot;&quot;This uses Germanish free-form keyword ordering.&quot;&quot;&quot;
     subject = kwargs['subject']
     direct_object = kwargs['direct_object']
@@ -408,14 +408,14 @@ def ball_giver_kwargs(**kwargs):
 
 
 # These print the same thing
-ball_giver_pos('man', 'ball', 'dog')
-ball_giver_kwargs(subject='man', direct_object='ball', indirect_object='dog')
-ball_giver_kwargs(direct_object='ball', indirect_object='dog', subject='man')
-ball_giver_kwargs(indirect_object='dog', subject='man', direct_object='ball')
-ball_giver_kwargs(subject='man', indirect_object='dog', direct_object='ball')
+giver_pos('man', 'ball', 'dog')
+giver_kwargs(subject='man', direct_object='ball', indirect_object='dog')
+giver_kwargs(direct_object='ball', indirect_object='dog', subject='man')
+giver_kwargs(indirect_object='dog', subject='man', direct_object='ball')
+giver_kwargs(subject='man', indirect_object='dog', direct_object='ball')
 
 # This does *not* print the same thing
-ball_giver_pos('ball', 'man', 'dog')
+giver_pos('ball', 'man', 'dog')
 </code></pre>
 
 <p>Note how the positional one loses functionality but requires less typing. You
