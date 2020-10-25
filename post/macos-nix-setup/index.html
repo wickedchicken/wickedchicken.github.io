@@ -231,7 +231,7 @@ made an error, <code>darwin-rebuild</code> will let you know and your current en
 affected.</p>
 <h4 id="updating-the-package-database">Updating the package database</h4>
 <p>If you want to update the package database, you can run</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nix" data-lang="nix">nix-channel <span style="color:#960050;background-color:#1e0010">--</span>update
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">nix-channel --update
 </code></pre></div><h4 id="advanced-usage">Advanced usage</h4>
 <p>Nix will detect conflicts and error out, such as when two packages install the same
 binary. This can happen when <code>python37</code> and <code>python38</code>, for example, both want to create a
