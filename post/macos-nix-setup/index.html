@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Mike Stipicevic" />
+<meta name="description" content="Mike Stip&#39;s personal blog" />
+<meta name="keywords" content="blog, tech" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.75.1" />
+
+<link rel="canonical" href="https://wickedchicken.github.io/post/macos-nix-setup/">
+<meta property="og:title" content="MacOS Nix Setup (an alternative to Homebrew)" />
+<meta property="og:description" content="I recently got a new Macbook, and began setting up the Nix package manager to install my developer toolset. I mainly did this to try and have a working setup without installing Homebrew. Since I ran into a few issues, I wanted to briefly document what I did and why in case others wanted to try the same.
+Why Nix? (and why not Homebrew or MacPorts?) The short answer: hype." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wickedchicken.github.io/post/macos-nix-setup/" />
+<meta property="article:published_time" content="2020-10-17T23:58:35-04:00" />
+<meta property="article:modified_time" content="2020-10-17T23:58:35-04:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MacOS Nix Setup (an alternative to Homebrew)"/>
+<meta name="twitter:description" content="I recently got a new Macbook, and began setting up the Nix package manager to install my developer toolset. I mainly did this to try and have a working setup without installing Homebrew. Since I ran into a few issues, I wanted to briefly document what I did and why in case others wanted to try the same.
+Why Nix? (and why not Homebrew or MacPorts?) The short answer: hype."/>
+
+
+<meta itemprop="name" content="MacOS Nix Setup (an alternative to Homebrew)">
+<meta itemprop="description" content="I recently got a new Macbook, and began setting up the Nix package manager to install my developer toolset. I mainly did this to try and have a working setup without installing Homebrew. Since I ran into a few issues, I wanted to briefly document what I did and why in case others wanted to try the same.
+Why Nix? (and why not Homebrew or MacPorts?) The short answer: hype.">
+<meta itemprop="datePublished" content="2020-10-17T23:58:35-04:00" />
+<meta itemprop="dateModified" content="2020-10-17T23:58:35-04:00" />
+<meta itemprop="wordCount" content="1492">
+
+
+
+<meta itemprop="keywords" content="" />
+
+
+<link rel="stylesheet" href="https://wickedchicken.github.io/css/layout.css" />
+
+
+<link rel="stylesheet" href="https://wickedchicken.github.io/css/default-dark.css" />
+
+
+
+
+<title>
+
+
+     MacOS Nix Setup (an alternative to Homebrew) 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://wickedchicken.github.io">Outer Haven</a>
+    </div> 
+
+    
+    
+    <a class="nav-item" href="https://wickedchicken.github.io/post/"><div class="nav-item-title">Posts</div></a>
+    
+    <a class="nav-item" href="https://wickedchicken.github.io/tags/"><div class="nav-item-title">Tags</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+
+  
+  <a href="https://github.com/wickedchicken" target="_blank"><div class="social-link">github</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/wickedchicken" target="_blank"><div class="social-link">twitter</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> MacOS Nix Setup (an alternative to Homebrew) </h1>
+    <div class="content"> <p>I recently got a new Macbook, and began setting up the <a href="https://nixos.org/">Nix</a> package manager to
+install my developer toolset. I mainly did this to try and have a working setup without
+installing <a href="https://brew.sh/">Homebrew</a>. Since I ran into a few issues, I wanted to briefly
+document what I did and why in case others wanted to try the same.</p>
+<h3 id="why-nix-and-why-not-homebrew-or-macports">Why Nix? (and why not Homebrew or MacPorts?)</h3>
+<p>The short answer: hype.</p>
+<p>The long answer: I&rsquo;ve been frustrated with Homebrew&rsquo;s user experience for years now, and
+used this opportunity to start afresh. The default non-Homebrew answer is the venerable
+<a href="https://www.macports.org/">MacPorts</a>, which has been around for quite a while. Most people who aren&rsquo;t
+functional programming or build system nerds should probably use MacPorts, as it has been
+around long enough to have good support documentation floating around the internet.
+Unfortunately I&rsquo;m a sucker for hermetic builds <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, so I decided to try
+Nix.</p>
+<p>In addition, Nix has one cool feature I haven&rsquo;t seen anywhere else: temporarily installing
+packages using <code>nix-shell</code>. For example, I can install <code>ripgrep</code> inside a temporary shell,
+and the package is automatically cleaned up when I&rsquo;m done:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">nix-shell -p ripgrep
+</code></pre></div><p>There&rsquo;s a lot of cool stuff <code>nix-shell</code> can do, check out some more examples
+<a href="https://ghedam.at/15978/an-introduction-to-nix-shell">here</a>.</p>
+<h4 id="why-not-homebrew">Why not Homebrew?</h4>
+<p>If Homebrew works for you, then by all means keep using Homebrew! However, I&rsquo;ve grown
+frustrated with it. Homebrew has spent a lot of effort making a software delivery system
+work across many iterations of OSX/MacOS, and countless developers have installed <code>brew</code>
+as one of the first things on a new Mac. It is with this acknowledgement of the work the
+Homebrew developers have put into the software and its resulting success that I offer
+these criticisms:</p>
+<ol>
+<li>
+<p>Unpredictable command times. I never know if running <code>brew install</code> or <code>brew upgrade</code>
+is going to take 5 seconds or 20 minutes. This usually means knowing if a program or
+dependency is being downloaded as a prebuilt binary or compiled on the spot. It would
+be nice to signal to the user if compilation is about to happen, so they can plan the
+install accordingly.</p>
+</li>
+<li>
+<p>Very slow <code>brew update</code> times. Homebrew&rsquo;s core package database is a
+<a href="https://github.com/Homebrew/homebrew-core">git repository</a>, which is great for enabling collaboration. Nix uses
+the <a href="https://github.com/NixOS/nixpkgs">same model</a>, but the difference lies in how the clients get the package
+database: <code>brew update</code> does a <code>git pull</code> under the hood, while <code>nix-channel --update</code>
+downloads a compressed tarball each time the channel is updated. This means Homebrew
+updates can rely on git and GitHub itself as an efficient distribution mechanism,
+getting delta updates &ldquo;for free&rdquo; without setting up extra infrastructure. However,
+this design choice means that the client has to maintain its own git repo &ndash;
+<a href="https://github.com/Homebrew/brew/issues/4755#issuecomment-416572560"><code>git gc</code> can strike at any time</a>, for example, and slow things down
+tremendously. It is also a nightmare for <a href="https://discourse.brew.sh/t/best-practice-for-homebrew-on-travis-brew-update-is-5min-to-build-time/5215">CI</a>, where the lack of
+an updated Homebrew git cache can negatively impact build times. Meanwhile,
+<code>nix-channel --update</code> runs are very predictable, even if a bit inefficient &ndash; you&rsquo;re
+downloading a 16Mb tarball when the channel is updated, but that&rsquo;s it.</p>
+</li>
+<li>
+<p>Bad interactions when packages are upgraded. I&rsquo;m not sure exactly why this happens, but
+occasionally when certain packages are upgraded (such as <code>python</code> from 3.7 to 3.8),
+<a href="https://discourse.brew.sh/t/homebrew-updating-major-python-version-breaks-a-lot-of-things-on-my-system/8545">related packages can break</a>. Because Nix builds are hermetic,
+packages should all &ldquo;work together&rdquo; regardless of how the system was previously set
+up.</p>
+</li>
+</ol>
+<h4 id="why-not-macports">Why not MacPorts?</h4>
+<p>To be honest, MacPorts is probably just fine for your needs. I haven&rsquo;t used it in forever,
+but my understanding is that it&rsquo;s reliable and has plenty of built-up community knowledge
+on how to fix things. Take a look at it and see if it fits your needs! I also quickly
+found <a href="https://saagarjha.com/blog/2019/04/26/thoughts-on-macos-package-managers/">this post</a> which details some differences between it and
+Homebrew. But hey, if you like adventure, give Nix a shot!</p>
+<h4 id="why-not-nix">Why not Nix?</h4>
+<p>I felt it was honest to include a section like this.</p>
+<ol>
+<li>
+<p>I haven&rsquo;t done a deep evaluation, but my impression is that Nix is the least documented
+and least mature of the bunch. Expect to do a bit more digging to solve issues, but
+once you get started it generally just works.</p>
+</li>
+<li>
+<p>Workarounds are currently needed for Catalina and above, especially if you have an
+older Mac without a T2 chip.</p>
+</li>
+<li>
+<p>You&rsquo;ll need to understand a bit of the <a href="https://nixos.wiki/wiki/Nix_Expression_Language">Nix Expression Language</a>. It&rsquo;s
+not as scary as it sounds, but you will have to edit a <code>.nix</code> file to install a
+package (there is no CLI equivalent to <code>brew install</code> that I am aware of).</p>
+</li>
+</ol>
+<h3 id="installing-nix">Installing Nix</h3>
+<p>Installing Nix requires two phases: installing Nix itself, and then installing
+<a href="https://github.com/LnL7/nix-darwin">nix-darwin</a>. The installation methods I know of involve <code>curl</code>ing with an
+eventual <code>sudo</code> call inside the script<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. You will have to do something extra if
+you&rsquo;re running Catalina<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> or above.</p>
+<ol>
+<li>
+<p>Install Nix:</p>
+<ul>
+<li>Pre-Catalina: <code>curl https://nixos.org/nix/install | sh</code> (I haven&rsquo;t tested this).</li>
+<li>Catalina with a T2 chip: <code>sh &lt;(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-volume</code>
+(according to the site, &ldquo;unecrypted&rdquo; is a misnomer as the chip will encrypt it
+anyway).</li>
+<li>Catalina without a T2 chip: follow <a href="https://www.philipp.haussleiter.de/2020/04/fixing-nix-setup-on-macos-catalina/">these instructions</a>
+<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</li>
+</ul>
+<p>Make sure that <code>nix-build</code> is now in your <code>PATH</code>. You may have to source
+<code>$HOME/.nix-profile/etc/profile.d/nix.sh</code> in your shell&rsquo;s <code>rc</code> file to get this to
+work.</p>
+</li>
+<li>
+<p>Install <code>nix-darwin</code>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer ./result/bin/darwin-installer
+</code></pre></div><p>You should now have <code>darwin-rebuild</code> in your <code>PATH</code>.</p>
+</li>
+</ol>
+<h3 id="using-nix">Using Nix</h3>
+<p>The basic workflow for using Nix is editing <code>~/.nixpkgs/darwin-configuration.nix</code> and then
+running <code>darwin-rebuild switch</code> to activate those changes.</p>
+<h4 id="editing-darwin-configurationnix">Editing <code>darwin-configuration.nix</code></h4>
+<p>Open up <code>~/.nixpkgs/darwin-configuration.nix</code> with your favorite editor. Look at
+<code>environment.systemPackages</code>: this is the list of packages you&rsquo;ll want to install.
+<a href="https://nixos.org/guides/nix-pills/basics-of-language.html#idm140737320584496">Nix lists</a> are space-delimited (not comma-delimited). The packages listed
+there come from the Nixpkgs channel you&rsquo;re subscribed to. You can list what packages are
+available by running <code>nix-env -qaP</code> or searching <a href="https://search.nixos.org/packages">Nixpkgs</a> online. All the
+packages are prepended with <code>pkgs.</code>; I used Nix&rsquo;s <code>with pkgs;</code> clause to prepend that by
+default:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nix" data-lang="nix">  environment<span style="color:#f92672">.</span>systemPackages <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#66d9ef">with</span> pkgs; [
+      gitAndTools<span style="color:#f92672">.</span>gitFull
+      byobu
+      wget
+    ];
+</code></pre></div><h4 id="activating-your-changes">Activating your changes</h4>
+<p>Once you&rsquo;re done editing, run <code>darwin-rebuild switch</code> to install your new packages! If you
+made an error, <code>darwin-rebuild</code> will let you know and your current environment will not be
+affected.</p>
+<h4 id="updating-the-package-database">Updating the package database</h4>
+<p>If you want to update the package database, you can run</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nix" data-lang="nix">nix-channel <span style="color:#960050;background-color:#1e0010">--</span>update
+</code></pre></div><h4 id="advanced-usage">Advanced usage</h4>
+<p>Nix will detect conflicts and error out, such as when two packages install the same
+binary. This can happen when <code>python37</code> and <code>python38</code>, for example, both want to create a
+binary called <code>pydoc3</code>. To resolve this, you can call <code>lowPrio</code> to declare a package low
+priority and have the other package win.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-nix" data-lang="nix">  environment<span style="color:#f92672">.</span>systemPackages <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#66d9ef">with</span> pkgs; [
+      python37
+      (lowPrio python38)
+    ];
+</code></pre></div><p>(As a side note: once you&rsquo;ve installed both, look at how quickly you can uninstall and
+reinstall each package. It takes between 1 and 2 seconds to uninstall or reinstall
+python3.7, which in my opinion is ridiculously fast.)</p>
+<h3 id="further-reading">Further reading</h3>
+<p>I have to admit that I only have a shallow knowledge of Nix, and the information above
+has made it sufficient as a daily replacement for Homebrew. However, there is a rich
+ecosystem around Nix that you may want to explore further. Here are a few links to learn
+more:</p>
+<ul>
+<li><a href="https://stackoverflow.com/questions/53335308/what-does-nix-darwin-provide">What does <code>nix-darwin</code> provide?</a></li>
+<li>The <a href="https://nixos.wiki/wiki/Nix_Ecosystem">Nix Ecosystem</a></li>
+<li>The <a href="https://nixos.wiki/wiki/Nix_Expression_Language">Nix Expression Language</a></li>
+<li><a href="https://nixos.org/guides/nix-pills/index.html">&ldquo;Nix Pills&rdquo;</a>, a detailed walkthrough of the Nix language and environment</li>
+<li>Tips and tricks for using <a href="https://ghedam.at/15978/an-introduction-to-nix-shell"><code>nix-shell</code></a></li>
+<li>The online <a href="https://search.nixos.org/packages">Nixpkgs search</a></li>
+<li>A helpful <a href="https://nixos.wiki/wiki/Cheatsheet">Nix cheatsheet</a></li>
+</ul>
+<h3 id="good-luck-and-have-fun">Good luck and have fun!</h3>
+<p>I hope this guide was helpful! As I&rsquo;m relatively new to Nix, feel free to contact me if
+there&rsquo;s something I got wrong or could have explained more clearly. Good luck and have fun
+with Nix!</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>From the <a href="https://landing.google.com/sre/sre-book/chapters/release-engineering/">Google SRE book</a>: a build that is &ldquo;insensitive to
+the libraries and other software installed on the build machine.&rdquo; This greatly
+increases reliability, because it means that whatever you have installed on your
+computer is less likely to affect the build process and the resulting program. This is
+similar to <a href="https://www.docker.com/">Dockerizing</a> an application, but less extreme and less
+resource-intensive to run. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>This is just as risky as the classic <a href="https://stackoverflow.com/questions/29382739/why-using-curl-sudo-sh-is-not-advised"><code>curl | sudo sh</code></a>.
+Unfortunately I can&rsquo;t find another way to easily install Nix, so I guess you can
+download <a href="https://nixos.org/nix/install">https://nixos.org/nix/install</a> and <a href="https://nixos.org/guides/nix-pills/install-on-your-running-system.html#idm140737320801568">compare its signature</a> before
+running it. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Catalina gets a lot of shade for its read-only root filesystem and signed
+binaries, but I think it&rsquo;s a step forward for general purpose computing. What I object
+to is that signed binaries must be signed with registered Apple developer accounts,
+which cost money. It would be nice if that was a bit distributed, so anyone could sign
+and Apple maintained a reputation database or something. I&rsquo;m annoyed at Apple for
+mixing good security and OS maintenance practices with total, walled-garden lockdown.
+Admittedly, the web has a lot of the <a href="https://xkcd.com/1367/">same security benefits</a>, but we&rsquo;re not at a
+point yet where web apps can compete with native applications. Hopefully we&rsquo;ll get
+there one day. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Thanks Philipp for figuring all this out and writing it down! <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+ </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+</div>
+
+    <div class="date"> 2020-10-17 </div>
+    
+  </div>
+</footer>
+
+
+  
+  
+
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+
+  
+  <a href="https://github.com/wickedchicken" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/wickedchicken" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://wickedchicken.github.io/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright"> Copyright (c) 2018, all rights reserved. Theme based on <a href="https://github.com/gyorb/hugo-dusk">hugo-dusk</a>. </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

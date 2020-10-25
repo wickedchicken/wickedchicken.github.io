@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Outer Haven</title>
@@ -7,10 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <copyright>Copyright (c) 2018, all rights reserved. Theme based on &lt;a href=&#34;https://github.com/gyorb/hugo-dusk&#34;&gt;hugo-dusk&lt;/a&gt;.</copyright>
-    <lastBuildDate>Sun, 03 Feb 2019 21:37:26 +0100</lastBuildDate>
-    
-	<atom:link href="https://wickedchicken.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sat, 17 Oct 2020 23:58:35 -0400</lastBuildDate><atom:link href="https://wickedchicken.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MacOS Nix Setup (an alternative to Homebrew)</title>
+      <link>https://wickedchicken.github.io/post/macos-nix-setup/</link>
+      <pubDate>Sat, 17 Oct 2020 23:58:35 -0400</pubDate>
+      
+      <guid>https://wickedchicken.github.io/post/macos-nix-setup/</guid>
+      <description>I recently got a new Macbook, and began setting up the Nix package manager to install my developer toolset. I mainly did this to try and have a working setup without installing Homebrew. Since I ran into a few issues, I wanted to briefly document what I did and why in case others wanted to try the same.
+Why Nix? (and why not Homebrew or MacPorts?) The short answer: hype.</description>
+    </item>
     
     <item>
       <title>German for Programmers</title>
@@ -19,7 +25,7 @@
       
       <guid>https://wickedchicken.github.io/post/german-for-programmers/</guid>
       <description>After 2 years of learning German I&amp;rsquo;ve noticed that, for the most part, you can go a long way by mapping foreign concepts to ones that you already know. In particular, I&amp;rsquo;ve had success mapping aspects of German grammar to programming concepts I use every day. After all, programmers deal with weird grammars all the time, why not take advantage of that skill?
-Gendered nouns: forward error correction Probably the first difficulty people run into when learning German is memorizing the gender of each noun and properly declining that noun&amp;rsquo;s articles when used in a sentence.</description>
+Gendered nouns: forward error correction Probably the first difficulty people run into when leaning German is memorizing the gender of each noun and properly declining that noun&amp;rsquo;s articles when used in a sentence.</description>
     </item>
     
   </channel>
