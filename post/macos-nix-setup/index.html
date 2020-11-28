@@ -29,7 +29,7 @@ Why Nix? (and why not Homebrew or MacPorts?) The short answer: hype."/>
 Why Nix? (and why not Homebrew or MacPorts?) The short answer: hype.">
 <meta itemprop="datePublished" content="2020-10-17T23:58:35-04:00" />
 <meta itemprop="dateModified" content="2020-10-17T23:58:35-04:00" />
-<meta itemprop="wordCount" content="1504">
+<meta itemprop="wordCount" content="1525">
 
 
 
@@ -192,7 +192,7 @@ you&rsquo;re running Catalina<sup id="fnref:3"><a href="#fn:3" class="footnote-r
 <li>
 <p>Install Nix:</p>
 <ul>
-<li>Pre-Catalina: <code>curl https://nixos.org/nix/install | sh</code> (I haven&rsquo;t tested this).</li>
+<li>Pre-Catalina: <code>curl -L https://nixos.org/nix/install | sh</code></li>
 <li>Catalina with a T2 chip: <code>sh &lt;(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-volume</code>
 (according to the site, &ldquo;unecrypted&rdquo; is a misnomer as the chip will encrypt it
 anyway).</li>
@@ -205,7 +205,8 @@ work.</p>
 </li>
 <li>
 <p>Install <code>nix-darwin</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer ./result/bin/darwin-installer
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer
+./result/bin/darwin-installer
 </code></pre></div><p>You should now have <code>darwin-rebuild</code> in your <code>PATH</code>.</p>
 </li>
 </ol>
@@ -282,9 +283,11 @@ running it. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x2
 <li id="fn:3" role="doc-endnote">
 <p>Catalina gets a lot of shade for its read-only root filesystem and signed
 binaries, but I think it&rsquo;s a step forward for general purpose computing. What I object
-to is that signed binaries must be signed with registered Apple developer accounts,
-which cost money. It would be nice if that was a bit distributed, so anyone could sign
-and Apple maintained a reputation database or something. I&rsquo;m annoyed at Apple for
+to is that signed binaries must be signed with registered Apple developer accounts to
+distribute software, and these accounts cost money (anyone can run their own software
+with the appropriate settings, but distributing software effectively needs an Apple
+developer account). It would be nice if that was a bit distributed, so anyone could
+sign and Apple maintained a reputation database or something. I&rsquo;m annoyed at Apple for
 mixing good security and OS maintenance practices with total, walled-garden lockdown.
 Admittedly, the web has a lot of the <a href="https://xkcd.com/1367/">same security benefits</a>, but we&rsquo;re not at a
 point yet where web apps can compete with native applications. Hopefully we&rsquo;ll get
