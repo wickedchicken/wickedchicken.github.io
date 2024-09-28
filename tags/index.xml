@@ -4,8 +4,9 @@
     <title>Tags on Outer Haven</title>
     <link>https://wickedchicken.github.io/tags/</link>
     <description>Recent content in Tags on Outer Haven</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
-    <copyright>Copyright (c) 2018, all rights reserved. Theme based on &lt;a href=&#34;https://github.com/gyorb/hugo-dusk&#34;&gt;hugo-dusk&lt;/a&gt;.</copyright><atom:link href="https://wickedchicken.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright (c) 2018 and later, all rights reserved. Theme based on &lt;a href=&#34;https://github.com/gyorb/hugo-dusk&#34;&gt;hugo-dusk&lt;/a&gt;.</copyright>
+    <atom:link href="https://wickedchicken.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

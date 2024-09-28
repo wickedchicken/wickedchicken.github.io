@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Outer Haven</title>
-    <link>https://wickedchicken.github.io/categories/</link>
-    <description>Recent content in Categories on Outer Haven</description>
+    <title>Native on Outer Haven</title>
+    <link>https://wickedchicken.github.io/native/</link>
+    <description>Recent content in Native on Outer Haven</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright (c) 2018 and later, all rights reserved. Theme based on &lt;a href=&#34;https://github.com/gyorb/hugo-dusk&#34;&gt;hugo-dusk&lt;/a&gt;.</copyright>
-    <atom:link href="https://wickedchicken.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wickedchicken.github.io/native/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

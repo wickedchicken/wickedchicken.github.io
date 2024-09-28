@@ -8,23 +8,23 @@
 <meta name="description" content="Mike Stip&#39;s personal blog" />
 <meta name="keywords" content="blog, tech" />
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.75.1" />
+<meta name="generator" content="Hugo 0.134.3">
 
 <link rel="canonical" href="https://wickedchicken.github.io/">
-<meta property="og:title" content="Outer Haven" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://wickedchicken.github.io/" />
-<meta property="og:updated_time" content="2020-10-17T23:58:35-04:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Outer Haven"/>
-<meta name="twitter:description" content=""/>
+<meta property="og:url" content="https://wickedchicken.github.io/">
+  <meta property="og:site_name" content="Outer Haven">
+  <meta property="og:title" content="Outer Haven">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
 
 
-<meta itemprop="name" content="Outer Haven">
-<meta itemprop="description" content="">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Outer Haven">
 
+
+  <meta itemprop="name" content="Outer Haven">
+  <meta itemprop="datePublished" content="2020-10-17T23:58:35-04:00">
+  <meta itemprop="dateModified" content="2020-10-17T23:58:35-04:00">
 
 <link rel="stylesheet" href="https://wickedchicken.github.io/css/layout.css" />
 
@@ -37,7 +37,7 @@
 <title>
 
 
-    Outer Haven
+     Outer Haven 
 
 </title>
 
@@ -52,7 +52,7 @@
 
   <nav>
     <div class="siteTitle">
-      <a href="https://wickedchicken.github.io">Outer Haven</a>
+      <a href="https://wickedchicken.github.io/">Outer Haven</a>
     </div> 
 
     
@@ -112,8 +112,19 @@
   </header>
 
   <div class="summary">
-    I recently got a new Macbook, and began setting up the Nix package manager to install my developer toolset. I mainly did this to try and have a working setup without installing Homebrew. Since I ran into a few issues, I wanted to briefly document what I did and why in case others wanted to try the same.
-Why Nix? (and why not Homebrew or MacPorts?) The short answer: hype.
+    <p>I recently got a new Macbook, and began setting up the <a href="https://nixos.org/">Nix</a> package manager to
+install my developer toolset. I mainly did this to try and have a working setup without
+installing <a href="https://brew.sh/">Homebrew</a>. Since I ran into a few issues, I wanted to briefly
+document what I did and why in case others wanted to try the same.</p>
+<h3 id="why-nix-and-why-not-homebrew-or-macports">Why Nix? (and why not Homebrew or MacPorts?)</h3>
+<p>The short answer: hype.</p>
+<p>The long answer: I&rsquo;ve been frustrated with Homebrew&rsquo;s user experience for years now, and
+used this opportunity to start afresh. The default non-Homebrew answer is the venerable
+<a href="https://www.macports.org/">MacPorts</a>, which has been around for quite a while. Most people who aren&rsquo;t
+functional programming or build system nerds should probably use MacPorts, as it has been
+around long enough to have good support documentation floating around the internet.
+Unfortunately I&rsquo;m a sucker for hermetic builds <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, so I decided to try
+Nix.</p>
   </div>
 
   <div class="rmore">
@@ -142,8 +153,18 @@ Why Nix? (and why not Homebrew or MacPorts?) The short answer: hype.
   </header>
 
   <div class="summary">
-    After 2 years of learning German I&rsquo;ve noticed that, for the most part, you can go a long way by mapping foreign concepts to ones that you already know. In particular, I&rsquo;ve had success mapping aspects of German grammar to programming concepts I use every day. After all, programmers deal with weird grammars all the time, why not take advantage of that skill?
-Gendered nouns: forward error correction Probably the first difficulty people run into when leaning German is memorizing the gender of each noun and properly declining that noun&rsquo;s articles when used in a sentence.
+    <p>After 2 years of learning German I&rsquo;ve noticed that, for the most part, you can
+go a long way by mapping foreign concepts to ones that you already know. In
+particular, I&rsquo;ve had success mapping aspects of German grammar to programming
+concepts I use every day. After all, programmers deal with weird grammars all
+the time, why not take advantage of that skill?</p>
+<h3 id="gendered-nouns-forward-error-correction">Gendered nouns: forward error correction</h3>
+<p>Probably the first difficulty people run into when leaning German is memorizing
+the gender of each noun and <a href="https://i.redd.it/hotye1wdbg511.jpg">properly declining</a> that noun&rsquo;s articles
+when used in a sentence. While the grammar is mostly regular here, two things
+make this challenging: the nonsensical assignment of genders to nouns<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+and the sheer amount of memorization required to select the correct declension
+once the gender of the noun is known.</p>
   </div>
 
   <div class="rmore">
@@ -192,13 +213,14 @@ Gendered nouns: forward error correction Probably the first difficulty people ru
   
 
   <div class="social-link">
-  <a href="https://wickedchicken.github.io/index.xml" target="_blank">RSS</a>
+  <a href="https://wickedchicken.github.io/index.xml">RSS</a>
+  
   </div>
 
 </div>
 
 
-  <div class="copyright"> Copyright (c) 2018, all rights reserved. Theme based on <a href="https://github.com/gyorb/hugo-dusk">hugo-dusk</a>. </div>
+  <div class="copyright"> Copyright (c) 2018 and later, all rights reserved. Theme based on <a href="https://github.com/gyorb/hugo-dusk">hugo-dusk</a>. </div>
 
   <div class="poweredby">
     Powered by <a href="https://gohugo.io/">Hugo</a>.

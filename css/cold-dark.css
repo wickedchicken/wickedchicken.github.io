@@ -4,13 +4,13 @@
  * */
 
 :root {
-    --main-bg-color: #101010;
-    --secondary-bg-color: #202020;
+    --main-bg-color: #0b0f14;
+    --secondary-bg-color: #161C25;
     --main-text: #ffffff;
-    --main-sec: #99cc66; /* main secondary color for the site */
+    --main-sec: #a0c7f8; /* main secondary color for the site */
     --code-quote-bg: #1D1F21; /* background color for quotes and code blocks */
     --copyright: #808080; /* copyright text color */
-    --border-color: #000000;
+    --border-color: #323943;
 }
 
 body {
@@ -42,7 +42,7 @@ a {
 
 pre {
   background: var(--main-bg-color);
-  border: 1px solid var(--border-color);
+  border: 1px solid #000000;
   border-radius: 5px;
 }
 
@@ -152,7 +152,7 @@ th { background: var(--main-bg-color); }
 }
 
 .rmore a:hover {
-  background: var(--secondary-bg-color) ;
+  background: #607794 ;
 }
 
 .terms {

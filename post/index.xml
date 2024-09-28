@@ -4,29 +4,24 @@
     <title>Posts on Outer Haven</title>
     <link>https://wickedchicken.github.io/post/</link>
     <description>Recent content in Posts on Outer Haven</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-US</language>
-    <copyright>Copyright (c) 2018, all rights reserved. Theme based on &lt;a href=&#34;https://github.com/gyorb/hugo-dusk&#34;&gt;hugo-dusk&lt;/a&gt;.</copyright>
-    <lastBuildDate>Sat, 17 Oct 2020 23:58:35 -0400</lastBuildDate><atom:link href="https://wickedchicken.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright (c) 2018 and later, all rights reserved. Theme based on &lt;a href=&#34;https://github.com/gyorb/hugo-dusk&#34;&gt;hugo-dusk&lt;/a&gt;.</copyright>
+    <lastBuildDate>Sat, 17 Oct 2020 23:58:35 -0400</lastBuildDate>
+    <atom:link href="https://wickedchicken.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>MacOS Nix Setup (an alternative to Homebrew)</title>
       <link>https://wickedchicken.github.io/post/macos-nix-setup/</link>
       <pubDate>Sat, 17 Oct 2020 23:58:35 -0400</pubDate>
-      
       <guid>https://wickedchicken.github.io/post/macos-nix-setup/</guid>
-      <description>I recently got a new Macbook, and began setting up the Nix package manager to install my developer toolset. I mainly did this to try and have a working setup without installing Homebrew. Since I ran into a few issues, I wanted to briefly document what I did and why in case others wanted to try the same.
-Why Nix? (and why not Homebrew or MacPorts?) The short answer: hype.</description>
+      <description>&lt;p&gt;I recently got a new Macbook, and began setting up the &lt;a href=&#34;https://nixos.org/&#34;&gt;Nix&lt;/a&gt; package manager to&#xA;install my developer toolset. I mainly did this to try and have a working setup without&#xA;installing &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt;. Since I ran into a few issues, I wanted to briefly&#xA;document what I did and why in case others wanted to try the same.&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-nix-and-why-not-homebrew-or-macports&#34;&gt;Why Nix? (and why not Homebrew or MacPorts?)&lt;/h3&gt;&#xA;&lt;p&gt;The short answer: hype.&lt;/p&gt;&#xA;&lt;p&gt;The long answer: I&amp;rsquo;ve been frustrated with Homebrew&amp;rsquo;s user experience for years now, and&#xA;used this opportunity to start afresh. The default non-Homebrew answer is the venerable&#xA;&lt;a href=&#34;https://www.macports.org/&#34;&gt;MacPorts&lt;/a&gt;, which has been around for quite a while. Most people who aren&amp;rsquo;t&#xA;functional programming or build system nerds should probably use MacPorts, as it has been&#xA;around long enough to have good support documentation floating around the internet.&#xA;Unfortunately I&amp;rsquo;m a sucker for hermetic builds &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, so I decided to try&#xA;Nix.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>German for Programmers</title>
       <link>https://wickedchicken.github.io/post/german-for-programmers/</link>
       <pubDate>Sun, 03 Feb 2019 21:37:26 +0100</pubDate>
-      
       <guid>https://wickedchicken.github.io/post/german-for-programmers/</guid>
-      <description>After 2 years of learning German I&amp;rsquo;ve noticed that, for the most part, you can go a long way by mapping foreign concepts to ones that you already know. In particular, I&amp;rsquo;ve had success mapping aspects of German grammar to programming concepts I use every day. After all, programmers deal with weird grammars all the time, why not take advantage of that skill?
-Gendered nouns: forward error correction Probably the first difficulty people run into when leaning German is memorizing the gender of each noun and properly declining that noun&amp;rsquo;s articles when used in a sentence.</description>
+      <description>&lt;p&gt;After 2 years of learning German I&amp;rsquo;ve noticed that, for the most part, you can&#xA;go a long way by mapping foreign concepts to ones that you already know. In&#xA;particular, I&amp;rsquo;ve had success mapping aspects of German grammar to programming&#xA;concepts I use every day. After all, programmers deal with weird grammars all&#xA;the time, why not take advantage of that skill?&lt;/p&gt;&#xA;&lt;h3 id=&#34;gendered-nouns-forward-error-correction&#34;&gt;Gendered nouns: forward error correction&lt;/h3&gt;&#xA;&lt;p&gt;Probably the first difficulty people run into when leaning German is memorizing&#xA;the gender of each noun and &lt;a href=&#34;https://i.redd.it/hotye1wdbg511.jpg&#34;&gt;properly declining&lt;/a&gt; that noun&amp;rsquo;s articles&#xA;when used in a sentence. While the grammar is mostly regular here, two things&#xA;make this challenging: the nonsensical assignment of genders to nouns&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&#xA;and the sheer amount of memorization required to select the correct declension&#xA;once the gender of the noun is known.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

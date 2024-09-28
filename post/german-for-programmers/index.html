@@ -7,34 +7,33 @@
 <meta name="description" content="Mike Stip&#39;s personal blog" />
 <meta name="keywords" content="blog, tech" />
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.75.1" />
+<meta name="generator" content="Hugo 0.134.3">
 
 <link rel="canonical" href="https://wickedchicken.github.io/post/german-for-programmers/">
-<meta property="og:title" content="German for Programmers" />
-<meta property="og:description" content="After 2 years of learning German I&rsquo;ve noticed that, for the most part, you can go a long way by mapping foreign concepts to ones that you already know. In particular, I&rsquo;ve had success mapping aspects of German grammar to programming concepts I use every day. After all, programmers deal with weird grammars all the time, why not take advantage of that skill?
-Gendered nouns: forward error correction Probably the first difficulty people run into when leaning German is memorizing the gender of each noun and properly declining that noun&rsquo;s articles when used in a sentence." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://wickedchicken.github.io/post/german-for-programmers/" />
-<meta property="article:published_time" content="2019-02-03T21:37:26+01:00" />
-<meta property="article:modified_time" content="2019-02-03T21:37:26+01:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="German for Programmers"/>
-<meta name="twitter:description" content="After 2 years of learning German I&rsquo;ve noticed that, for the most part, you can go a long way by mapping foreign concepts to ones that you already know. In particular, I&rsquo;ve had success mapping aspects of German grammar to programming concepts I use every day. After all, programmers deal with weird grammars all the time, why not take advantage of that skill?
-Gendered nouns: forward error correction Probably the first difficulty people run into when leaning German is memorizing the gender of each noun and properly declining that noun&rsquo;s articles when used in a sentence."/>
+<meta property="og:url" content="https://wickedchicken.github.io/post/german-for-programmers/">
+  <meta property="og:site_name" content="Outer Haven">
+  <meta property="og:title" content="German for Programmers">
+  <meta property="og:description" content="After 2 years of learning German I’ve noticed that, for the most part, you can go a long way by mapping foreign concepts to ones that you already know. In particular, I’ve had success mapping aspects of German grammar to programming concepts I use every day. After all, programmers deal with weird grammars all the time, why not take advantage of that skill?
+Gendered nouns: forward error correction Probably the first difficulty people run into when leaning German is memorizing the gender of each noun and properly declining that noun’s articles when used in a sentence. While the grammar is mostly regular here, two things make this challenging: the nonsensical assignment of genders to nouns1 and the sheer amount of memorization required to select the correct declension once the gender of the noun is known.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2019-02-03T21:37:26+01:00">
+    <meta property="article:modified_time" content="2019-02-03T21:37:26+01:00">
 
 
-<meta itemprop="name" content="German for Programmers">
-<meta itemprop="description" content="After 2 years of learning German I&rsquo;ve noticed that, for the most part, you can go a long way by mapping foreign concepts to ones that you already know. In particular, I&rsquo;ve had success mapping aspects of German grammar to programming concepts I use every day. After all, programmers deal with weird grammars all the time, why not take advantage of that skill?
-Gendered nouns: forward error correction Probably the first difficulty people run into when leaning German is memorizing the gender of each noun and properly declining that noun&rsquo;s articles when used in a sentence.">
-<meta itemprop="datePublished" content="2019-02-03T21:37:26+01:00" />
-<meta itemprop="dateModified" content="2019-02-03T21:37:26+01:00" />
-<meta itemprop="wordCount" content="2552">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="German for Programmers">
+  <meta name="twitter:description" content="After 2 years of learning German I’ve noticed that, for the most part, you can go a long way by mapping foreign concepts to ones that you already know. In particular, I’ve had success mapping aspects of German grammar to programming concepts I use every day. After all, programmers deal with weird grammars all the time, why not take advantage of that skill?
+Gendered nouns: forward error correction Probably the first difficulty people run into when leaning German is memorizing the gender of each noun and properly declining that noun’s articles when used in a sentence. While the grammar is mostly regular here, two things make this challenging: the nonsensical assignment of genders to nouns1 and the sheer amount of memorization required to select the correct declension once the gender of the noun is known.">
 
 
-
-<meta itemprop="keywords" content="" />
-
+  <meta itemprop="name" content="German for Programmers">
+  <meta itemprop="description" content="After 2 years of learning German I’ve noticed that, for the most part, you can go a long way by mapping foreign concepts to ones that you already know. In particular, I’ve had success mapping aspects of German grammar to programming concepts I use every day. After all, programmers deal with weird grammars all the time, why not take advantage of that skill?
+Gendered nouns: forward error correction Probably the first difficulty people run into when leaning German is memorizing the gender of each noun and properly declining that noun’s articles when used in a sentence. While the grammar is mostly regular here, two things make this challenging: the nonsensical assignment of genders to nouns1 and the sheer amount of memorization required to select the correct declension once the gender of the noun is known.">
+  <meta itemprop="datePublished" content="2019-02-03T21:37:26+01:00">
+  <meta itemprop="dateModified" content="2019-02-03T21:37:26+01:00">
+  <meta itemprop="wordCount" content="2543">
 
 <link rel="stylesheet" href="https://wickedchicken.github.io/css/layout.css" />
 
@@ -62,7 +61,7 @@ Gendered nouns: forward error correction Probably the first difficulty people ru
 
   <nav>
     <div class="siteTitle">
-      <a href="https://wickedchicken.github.io">Outer Haven</a>
+      <a href="https://wickedchicken.github.io/">Outer Haven</a>
     </div> 
 
     
@@ -169,15 +168,15 @@ the <a href="https://docs.python.org/3/tutorial/errors.html#defining-clean-up-ac
 a code execution leaves a certain scope. The most-often used context manager is
 in the <code>file</code> object; it ensures that the file is closed when the object goes
 out of scope so you can&rsquo;t forget to close it.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;workfile&#39;</span>) <span style="color:#66d9ef">as</span> f:
-    read_data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
-</code></pre></div><p>replaces</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#39;workfile&#39;</span>)
-<span style="color:#66d9ef">try</span>:
-    read_data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
-<span style="color:#66d9ef">finally</span>:
-    f<span style="color:#f92672">.</span>close()
-</code></pre></div><p>In addition to cleverly eliminating errors regarding forgotten cleanup and
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#39;workfile&#39;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>    read_data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+</span></span></code></pre></div><p>replaces</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>f <span style="color:#f92672">=</span> open(<span style="color:#e6db74">&#39;workfile&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    read_data <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">finally</span>:
+</span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>close()
+</span></span></code></pre></div><p>In addition to cleverly eliminating errors regarding forgotten cleanup and
 further consolidating code, context
 managers help ensure the correct ordering of cleanup code. This is because
 as context managers are combined, they maintain a LIFO ordering &ndash; the innermost
@@ -211,10 +210,9 @@ not a color.&rdquo;</p>
 <p>In 2010, the xkcd author ran a color survey looking for similarities in how
 people described colors. Out of that came a chart mapping a continuous color
 space to discrete English words<sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>:</p>
-<figure><a href="https://blog.xkcd.com/2010/05/03/color-survey-results/">
-    <img src="https://wickedchicken.github.io/static/xkcd_colors.png" width="70%"/> </a><figcaption>
-            <h4>clusters of English names for colors</h4>
-        </figcaption>
+<figure><a href="https://blog.xkcd.com/2010/05/03/color-survey-results/"><img src="https://wickedchicken.github.io/static/xkcd_colors.png" width="70%"></a><figcaption>
+      <h4>clusters of English names for colors</h4>
+    </figcaption>
 </figure>
 
 <p>More detailed analyses have been done by <a href="https://jov.arvojournals.org/article.aspx?articleid=2121523">Lindsey and Brown</a>
@@ -222,22 +220,19 @@ and <a href="https://jov.arvojournals.org/article.aspx?articleid=2608579">Kuriki
 (thanks to <a href="https://twitter.com/sundress">Alice Boxhall</a> for helping me find these!). The most
 striking part of this work is that Japanese speakers are far more likely to
 consider &ldquo;light blue&rdquo; to be a basic color term than English speakers would:</p>
-<figure>
-    <img src="https://wickedchicken.github.io/static/raw_colors.png"/> <figcaption>
-            <h4>colors participants were asked to name</h4>
-        </figcaption>
+<figure><img src="https://wickedchicken.github.io/static/raw_colors.png"><figcaption>
+      <h4>colors participants were asked to name</h4>
+    </figcaption>
 </figure>
 
-<figure>
-    <img src="https://wickedchicken.github.io/static/english_colors.png"/> <figcaption>
-            <h4>colors that American English speakers were most likely to assign</h4>
-        </figcaption>
+<figure><img src="https://wickedchicken.github.io/static/english_colors.png"><figcaption>
+      <h4>colors that American English speakers were most likely to assign</h4>
+    </figcaption>
 </figure>
 
-<figure>
-    <img src="https://wickedchicken.github.io/static/japanese_colors.png"/> <figcaption>
-            <h4>colors that japanese speakers were most likely to assign</h4>
-        </figcaption>
+<figure><img src="https://wickedchicken.github.io/static/japanese_colors.png"><figcaption>
+      <h4>colors that japanese speakers were most likely to assign</h4>
+    </figcaption>
 </figure>
 
 <p>Just as our word &ldquo;blue&rdquo; covers both &ldquo;blue&rdquo; and &ldquo;light-blue&rdquo; in Japanese<sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>,
@@ -258,8 +253,8 @@ covers a different shape over the semantic space and should be treated on its
 own. Don&rsquo;t pay attention to translations, don&rsquo;t try to &ldquo;guess&rdquo; how it might work
 based on prepositions you know, just learn them afresh (usually by memorizing
 which prepositions often go with which verbs, or memorizing common phrases like
-&ldquo;<em>auf der Hand</em>&quot;).</p>
-<h3 id="declined-thes-are-just-how-german-does-kwargs">Declined &lsquo;the&rsquo;s are just how German does kwargs</h3>
+&ldquo;<em>auf der Hand</em>&rdquo;).</p>
+<h3 id="declined-thes-are-just-how-german-does-kwargs">Declined &rsquo;the&rsquo;s are just how German does kwargs</h3>
 <p>Most of the toil around early German involves learning how to properly decline
 articles. While the <a href="#gendered-nouns-forward-error-correction">genderedness</a>
 causes its own problems, even the declination rules themselves can take time to
@@ -290,34 +285,34 @@ ways:</p>
 grammatically.</p>
 <p>In Python, a function can be called with positional and keyword arguments.
 Usually positional arguments are specified in the signature, but unlimited
-&lsquo;extra&rsquo; positional arguments and keyword arguments can be collected by convention
+&rsquo;extra&rsquo; positional arguments and keyword arguments can be collected by convention
 in an &ldquo;<code>*args</code>&rdquo; array and a &ldquo;<code>**kwargs</code>&rdquo; dictionary respectively<sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>.
 <code>kwargs</code> have the nice property that they can be given in any
 order<sup id="fnref:9"><a href="#fn:9" class="footnote-ref" role="doc-noteref">9</a></sup>, but the price is that you have to refer to them by
 keyword:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">giver_pos</span>(subject, direct_object, indirect_object):
-    <span style="color:#e6db74">&#34;&#34;&#34;This uses English-style positional ordering.&#34;&#34;&#34;</span>
-    <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#39;The {subject} gives the {direct_object} to the {indirect_object}.&#39;</span>)
-
-
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">giver_kwargs</span>(<span style="color:#f92672">**</span>kwargs):
-    <span style="color:#e6db74">&#34;&#34;&#34;This uses Germanish free-form keyword ordering.&#34;&#34;&#34;</span>
-    subject <span style="color:#f92672">=</span> kwargs[<span style="color:#e6db74">&#39;subject&#39;</span>]
-    direct_object <span style="color:#f92672">=</span> kwargs[<span style="color:#e6db74">&#39;direct_object&#39;</span>]
-    indirect_object <span style="color:#f92672">=</span> kwargs[<span style="color:#e6db74">&#39;indirect_object&#39;</span>]
-    <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#39;The {subject} gives the {direct_object} to the {indirect_object}.&#39;</span>)
-
-
-<span style="color:#75715e"># These print the same thing</span>
-giver_pos(<span style="color:#e6db74">&#39;man&#39;</span>, <span style="color:#e6db74">&#39;ball&#39;</span>, <span style="color:#e6db74">&#39;dog&#39;</span>)
-giver_kwargs(subject<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;man&#39;</span>, direct_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ball&#39;</span>, indirect_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dog&#39;</span>)
-giver_kwargs(direct_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ball&#39;</span>, indirect_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dog&#39;</span>, subject<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;man&#39;</span>)
-giver_kwargs(indirect_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dog&#39;</span>, subject<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;man&#39;</span>, direct_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ball&#39;</span>)
-giver_kwargs(subject<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;man&#39;</span>, indirect_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dog&#39;</span>, direct_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ball&#39;</span>)
-
-<span style="color:#75715e"># This does *not* print the same thing</span>
-giver_pos(<span style="color:#e6db74">&#39;ball&#39;</span>, <span style="color:#e6db74">&#39;man&#39;</span>, <span style="color:#e6db74">&#39;dog&#39;</span>)
-</code></pre></div><p>Note how the positional one loses functionality but requires less typing. You
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">giver_pos</span>(subject, direct_object, indirect_object):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;This uses English-style positional ordering.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;The </span><span style="color:#e6db74">{</span>subject<span style="color:#e6db74">}</span><span style="color:#e6db74"> gives the </span><span style="color:#e6db74">{</span>direct_object<span style="color:#e6db74">}</span><span style="color:#e6db74"> to the </span><span style="color:#e6db74">{</span>indirect_object<span style="color:#e6db74">}</span><span style="color:#e6db74">.&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">giver_kwargs</span>(<span style="color:#f92672">**</span>kwargs):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;This uses Germanish free-form keyword ordering.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    subject <span style="color:#f92672">=</span> kwargs[<span style="color:#e6db74">&#39;subject&#39;</span>]
+</span></span><span style="display:flex;"><span>    direct_object <span style="color:#f92672">=</span> kwargs[<span style="color:#e6db74">&#39;direct_object&#39;</span>]
+</span></span><span style="display:flex;"><span>    indirect_object <span style="color:#f92672">=</span> kwargs[<span style="color:#e6db74">&#39;indirect_object&#39;</span>]
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;The </span><span style="color:#e6db74">{</span>subject<span style="color:#e6db74">}</span><span style="color:#e6db74"> gives the </span><span style="color:#e6db74">{</span>direct_object<span style="color:#e6db74">}</span><span style="color:#e6db74"> to the </span><span style="color:#e6db74">{</span>indirect_object<span style="color:#e6db74">}</span><span style="color:#e6db74">.&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># These print the same thing</span>
+</span></span><span style="display:flex;"><span>giver_pos(<span style="color:#e6db74">&#39;man&#39;</span>, <span style="color:#e6db74">&#39;ball&#39;</span>, <span style="color:#e6db74">&#39;dog&#39;</span>)
+</span></span><span style="display:flex;"><span>giver_kwargs(subject<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;man&#39;</span>, direct_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ball&#39;</span>, indirect_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dog&#39;</span>)
+</span></span><span style="display:flex;"><span>giver_kwargs(direct_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ball&#39;</span>, indirect_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dog&#39;</span>, subject<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;man&#39;</span>)
+</span></span><span style="display:flex;"><span>giver_kwargs(indirect_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dog&#39;</span>, subject<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;man&#39;</span>, direct_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ball&#39;</span>)
+</span></span><span style="display:flex;"><span>giver_kwargs(subject<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;man&#39;</span>, indirect_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;dog&#39;</span>, direct_object<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ball&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This does *not* print the same thing</span>
+</span></span><span style="display:flex;"><span>giver_pos(<span style="color:#e6db74">&#39;ball&#39;</span>, <span style="color:#e6db74">&#39;man&#39;</span>, <span style="color:#e6db74">&#39;dog&#39;</span>)
+</span></span></code></pre></div><p>Note how the positional one loses functionality but requires less typing. You
 need <em>some</em> kind of information to differentiate in which sense a word is to
 be used, and each way has a tradeoff. English chooses to use position for
 simplicity and loses flexibility, German chooses to use declination for
@@ -348,57 +343,57 @@ adverbial or subject clause. &ldquo;On Fridays I eat pizza&rdquo; becomes &ldquo
 It&rsquo;s possible to get lost in
 <a href="#many-german-verb-constructs-are-just-context-managers">complicated German sentences</a>,
 so forcing the important bits up front just seems helpful.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p><em>Der Junge</em>, boy, is masculine. <em>Das Mädchen</em>, girl, is neutral.
-<em>Die Männlichkeit</em>, masculinity, is female. <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<em>Die Männlichkeit</em>, masculinity, is female.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>Mix the bits into overlapping checksums so if one checksum
-fails, you can reconstruct the original bit from the other checksums. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+fails, you can reconstruct the original bit from the other checksums.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>Encode the data as a polynomial, then send points that
 sit on that polynomial such that you can reconstruct the polynomial from the
 points received. By sending way more points than necessary you can correctly
 reconstruct the original polynomial even if some points are missing or
-altered. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+altered.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p>Convolutional codes repeatedly mix new data with
 previously emitted data. There are a few ways to decode this, but the
 <a href="https://en.wikipedia.org/wiki/Viterbi_algorithm">Viterbi algorithm</a> is pretty cool &ndash; you use dynamic programming
 to reconstruct the input (represented as a path through a Markov chain)
 that was most likely to have generated the observed output (the convolved
-and emitted data). This works even if that output was emitted unreliably. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+and emitted data). This works even if that output was emitted unreliably.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:5" role="doc-endnote">
+<li id="fn:5">
 <p>Other languages have constructs like this. Go has
 <a href="https://tour.golang.org/flowcontrol/12">defer</a>, Rust has <a href="https://github.com/bluss/scopeguard">scopeguard</a>, C++ has
-<a href="https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization">RAII</a>, and Scheme has <a href="https://www.scheme.com/tspl3/io.html">call-with-input-file</a>. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<a href="https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization">RAII</a>, and Scheme has <a href="https://www.scheme.com/tspl3/io.html">call-with-input-file</a>.&#160;<a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:6" role="doc-endnote">
+<li id="fn:6">
 <p>Remember, what we call &ldquo;red&rdquo; <a href="http://hyperphysics.phy-astr.gsu.edu/hbase/vision/specol.html">maps</a> to a range spanning
-625-740nm, and that precise range might change person to person. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+625-740nm, and that precise range might change person to person.&#160;<a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:7" role="doc-endnote">
+<li id="fn:7">
 <p>It should be noted that in the study of American English, about 1/3 of
 respondents used &ldquo;teal&rdquo; instead of &ldquo;blue&rdquo; when describing the lighter,
-greener shades of &ldquo;blue.&rdquo; <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+greener shades of &ldquo;blue.&rdquo;&#160;<a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:8" role="doc-endnote">
+<li id="fn:8">
 <p><code>kwargs</code> is pronounced like the fictional word &ldquo;quargs,&rdquo; and any
-other pronunciation is incorrect. <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+other pronunciation is incorrect.&#160;<a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:9" role="doc-endnote">
+<li id="fn:9">
 <p><a href="https://www.python.org/dev/peps/pep-0468/">PEP 468</a>,
 introduced in Python 3.6, preserves the keyword argument order in the
 dictionary given to the called function. This enables cases where that might
-be useful. <a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+be useful.&#160;<a href="#fnref:9" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:10" role="doc-endnote">
+<li id="fn:10">
 <p>If a processor needs to know which side of <code>if (x + 4) &gt; 5</code> to
 execute, it can&rsquo;t do anything until it knows what <code>x + 4</code> is. This can be a
 problem in pipelined processors where most of the speed gains come from
@@ -406,19 +401,18 @@ starting an instruction before the instruction before it has finished.
 Immense performance gains can be had if you use tricks to &ldquo;fill up&rdquo; the
 downtime while you&rsquo;re waiting for a critical instruction to finish. For
 example, if you have</p>
-<pre><code>y = 5 + 6
+<pre tabindex="0"><code>y = 5 + 6
 if (x + 4) &gt; 5:
-    print('hello!')
+    print(&#39;hello!&#39;)
 else:
-    print('goodbye!')
+    print(&#39;goodbye!&#39;)
 ``` you can start computing `(x + 4)` _before_ `y = 5 + 6`, so that the
 answer is ready when the if statement needs to determine which `print`
-statement to execute. You're just rearranging when things execute to make
+statement to execute. You&#39;re just rearranging when things execute to make
 sure there is as little downtime as possible.
-
-</code></pre> <a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></li>
+</code></pre>&#160;<a href="#fnref:10" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></li>
 </ol>
-</section>
+</div>
  </div>
     <footer class="post-footer">
 
@@ -428,8 +422,8 @@ sure there is as little downtime as possible.
   
 </div>
 
-    <div class="date"> 2019-02-03 </div>
     
+    <div class="date"> Published: 2019-02-03</div>
   </div>
 </footer>
 
@@ -460,13 +454,13 @@ sure there is as little downtime as possible.
   
 
   <div class="social-link">
-  <a href="https://wickedchicken.github.io/index.xml" target="_blank">RSS</a>
+  
   </div>
 
 </div>
 
 
-  <div class="copyright"> Copyright (c) 2018, all rights reserved. Theme based on <a href="https://github.com/gyorb/hugo-dusk">hugo-dusk</a>. </div>
+  <div class="copyright"> Copyright (c) 2018 and later, all rights reserved. Theme based on <a href="https://github.com/gyorb/hugo-dusk">hugo-dusk</a>. </div>
 
   <div class="poweredby">
     Powered by <a href="https://gohugo.io/">Hugo</a>.
