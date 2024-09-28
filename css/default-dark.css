@@ -4,12 +4,11 @@
  * */
 
 :root {
-    --main-bg-color: #101010;
-    --secondary-bg-color: #202020;
-    --main-text: #ffffff;
-    --main-sec: #99cc66; /* main secondary color for the site */
-    --code-quote-bg: #1D1F21; /* background color for quotes and code blocks */
-    --copyright: #808080; /* copyright text color */
+    --main-bg-color: #202024;
+    --main-text: #EFE0B9;
+    --main-sec: #B7521E; /* main secondary color for the site */
+    --code-quote-bg: #643B0F; /* background color for quotes and code blocks */
+    --copyright: #E4B04A; /* copyright text color */
     --border-color: #000000;
 }
 
