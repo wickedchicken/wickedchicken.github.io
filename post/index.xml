@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright (c) 2018 and later, all rights reserved. Theme based on &lt;a href=&#34;https://github.com/gyorb/hugo-dusk&#34;&gt;hugo-dusk&lt;/a&gt;.</copyright>
-    <lastBuildDate>Sat, 17 Oct 2020 23:58:35 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 04 Nov 2024 00:20:35 +0100</lastBuildDate>
     <atom:link href="https://wickedchicken.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hire Me</title>
+      <link>https://wickedchicken.github.io/post/hire-me/</link>
+      <pubDate>Mon, 04 Nov 2024 00:20:35 +0100</pubDate>
+      <guid>https://wickedchicken.github.io/post/hire-me/</guid>
+      <description>&lt;h1 id=&#34;hire-me&#34;&gt;Hire me!&lt;/h1&gt;&#xA;&lt;p&gt;Hello! I&amp;rsquo;m a software engineer looking for a new job in Berlin (or remote)!&#xA;I have 15 years of professional experience in small, medium and large companies, and am&#xA;looking forward to seeing how I can use that experience to help further your team&amp;rsquo;s goals.&#xA;I have listed more about about myself below.&lt;/p&gt;&#xA;&lt;p&gt;If I seem&#xA;like a good fit, please contact me using one of the methods listed in the &amp;ldquo;contact&amp;rdquo;&#xA;section. Even if you&amp;rsquo;re not hiring, I&amp;rsquo;m up for a coffee or chat if you&amp;rsquo;re in Berlin.&#xA;Looking forward to hearing from you!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>MacOS Nix Setup (an alternative to Homebrew)</title>
       <link>https://wickedchicken.github.io/post/macos-nix-setup/</link>
