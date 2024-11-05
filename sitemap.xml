@@ -2,13 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wickedchicken.github.io/post/hire-me/</loc>
-    <lastmod>2024-11-04T00:20:35+01:00</lastmod>
-  </url><url>
     <loc>https://wickedchicken.github.io/</loc>
-    <lastmod>2024-11-04T00:20:35+01:00</lastmod>
+    <lastmod>2024-11-05T05:05:00+01:00</lastmod>
   </url><url>
     <loc>https://wickedchicken.github.io/post/</loc>
+    <lastmod>2024-11-05T05:05:00+01:00</lastmod>
+  </url><url>
+    <loc>https://wickedchicken.github.io/post/programmer-in-berlin-language/</loc>
+    <lastmod>2024-11-05T05:05:00+01:00</lastmod>
+  </url><url>
+    <loc>https://wickedchicken.github.io/post/programmer-in-berlin-culture/</loc>
+    <lastmod>2024-11-05T05:04:00+01:00</lastmod>
+  </url><url>
+    <loc>https://wickedchicken.github.io/post/programmer-in-berlin-finances/</loc>
+    <lastmod>2024-11-05T05:03:00+01:00</lastmod>
+  </url><url>
+    <loc>https://wickedchicken.github.io/post/programmer-in-berlin-moving-in/</loc>
+    <lastmod>2024-11-05T05:02:00+01:00</lastmod>
+  </url><url>
+    <loc>https://wickedchicken.github.io/post/programmer-in-berlin-motivation/</loc>
+    <lastmod>2024-11-05T05:01:00+01:00</lastmod>
+  </url><url>
+    <loc>https://wickedchicken.github.io/post/programmer-in-berlin/</loc>
+    <lastmod>2024-11-05T05:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://wickedchicken.github.io/post/hire-me/</loc>
     <lastmod>2024-11-04T00:20:35+01:00</lastmod>
   </url><url>
     <loc>https://wickedchicken.github.io/post/macos-nix-setup/</loc>
